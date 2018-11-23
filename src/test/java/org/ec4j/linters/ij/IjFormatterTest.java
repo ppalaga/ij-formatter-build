@@ -18,6 +18,10 @@ public class IjFormatterTest {
 
         final String actual = null; // TODO: how can I format unformated?
 
+        // Check that this class can see a class from IJ
+        com.intellij.psi.impl.source.codeStyle.CodeFormatterFacade codeFormatterFacade = null;
+        System.out.println(codeFormatterFacade);
+
         Assert.assertEquals(expected, actual);
     }
 
